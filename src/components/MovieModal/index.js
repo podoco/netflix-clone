@@ -14,8 +14,6 @@ export default function MovieModal({
 
   const ref = useRef();
 
-
-
   return (
     <div className="presentation">
       <div className="wrapper-modal">

@@ -58,9 +58,10 @@ const Row = ({ isLargeRow, title, fetchUrl, id }) => {
         </div>
       </div>
 
-      {modalOpen && (
+      {modalOpen && ( 
         <MovieModal {...movieSelected}
-          setModalOpen={setModalOpen} />)}
+          setModalOpen={setModalOpen} />)
+      }
 
     </section>
   );
