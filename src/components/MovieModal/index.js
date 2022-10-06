@@ -1,4 +1,5 @@
 import React, { useRef, useCallback } from "react";
+import useOnClickOutside from "../../hooks/useOnClickOutside";
 import "./MovieModal.css"
 
 export default function MovieModal({
@@ -12,7 +13,10 @@ export default function MovieModal({
   setModalOpen
 }) {
 
+  //돔부분 적용
   const ref = useRef();
+  //훅스 실행
+  useOnClickOutside(ref, () => { setModalOpen(false) })
 
   return (
     <div className="presentation">
